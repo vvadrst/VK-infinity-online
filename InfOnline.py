@@ -3,6 +3,7 @@ import vk_api
 from threading import Thread
 from config import TOKEN
 
+# создайте файл config.py в текущей директории проекта
 # В файле config.py укажите токен авторизации аккаунта
 def get_vk_session(acces_token, i):
     session = vk_api.VkApi(token=acces_token)
@@ -23,3 +24,4 @@ thread_1.start()
 
 # Ожидаем завершения потоков (хотя они бесконечные)
 thread_1.join()
+# запустить с помощью команды python3 InfOnline.py
