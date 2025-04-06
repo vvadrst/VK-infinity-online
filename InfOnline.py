@@ -3,7 +3,7 @@ import vk_api
 from threading import Thread
 from config import TOKEN
 
-# В файле config.py укажите токен авторизации страницы
+# В файле config.py укажите токен авторизации аккаунта
 def get_vk_session(acces_token, i):
     session = vk_api.VkApi(token=acces_token)
     vk_session = session.get_api()
