@@ -11,8 +11,8 @@ def get_vk_session(acces_token, i):
     while True:
         try:
             print(f'Онлайн режим активирован для аккаунта: {i}')
-            vk_session.account.setOnline() # 5 мин == 300 сек
-            time.sleep(300)
+            vk_session.account.setOnline()
+            time.sleep(300) # 5 мин == 300 сек
         except Exception as e:
             print(f'Что-то пошло не так: {e}')
             time.sleep(30) # Пауза при ошибке
