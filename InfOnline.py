@@ -14,4 +14,4 @@ while True:
         time.sleep(300)
     except Exception as e:
         print(f'Что-то пошло не так: {e}')
-# запустить командой InfOnline.py
+# запустить командой python3 InfOnline.py
